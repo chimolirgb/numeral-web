@@ -13,6 +13,7 @@ const Partners = () => {
       <Navigation />
       <main className={styles.hero}>
         <div className="container">
+          <div className="row">
         <h1 className={styles.title}>Our Partners</h1>
         <p className={styles.description}>Some of our partners</p>
         <div className={`container ${styles.customersContainer}`}>
@@ -79,6 +80,7 @@ const Partners = () => {
           </div>
         </div>
       </div>
+        </div>
         
       </main>
 

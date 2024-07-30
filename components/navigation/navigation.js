@@ -5,7 +5,10 @@ import Link from "next/link";
 import styles from "./navigation.module.css";
 import Image from "next/image";
 
+
 const Navigation = () => {
+ 
+
   const [navOpen, setNavOpen] = useState(false);
 
   const toggleNav = () => {
@@ -13,6 +16,7 @@ const Navigation = () => {
   };
 
   return (
+
     <nav className={styles.nav}>
       {/* <div className={`${styles.hamburger} ${styles.mobileOnly}`} onClick={toggleNav}>
       </div> */}
@@ -89,6 +93,7 @@ const Navigation = () => {
         </li>
       </ul>
     </nav>
+ 
   );
 };
 

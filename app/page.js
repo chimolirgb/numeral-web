@@ -9,44 +9,46 @@ import "bootstrap/dist/css/bootstrap.min.css";
 export default function Home() {
   return (
     <>
-      <Header />
-      <Navigation />
+      <div className={styles.header}>
+        <Header />
+        <Navigation />
+      </div>
       <main className={styles.main}>
-        <div className="hero-section">
-          <div className={styles.landing}>
-            <div className={styles.imageContainer}>
-              <img
-                src="/images/newsletter.jpg"
-                alt="newsletter"
-                className={styles.image}
-              />
-            </div>
-            <div className={styles.gradient}>
-              <div className={styles.overlay}>
-                <p className={styles.ptop}>
-                  We are on a mission to build Africa's largest IoT service
-                  platform, powered by our proprietary hardware
-                </p>
-              </div>
+        <div className={styles.landing}>
+          <div className={styles.imageContainer}>
+            <img
+              src="/images/newsletter.jpg"
+              alt="newsletter"
+              className={styles.image}
+            />
+          </div>
+          <div className={styles.gradient}>
+            <div className={styles.overlay}>
+              <p className={styles.ptop}>
+                We are on a mission to build Africa's largest IoT service
+                platform, powered by our proprietary hardware
+              </p>
             </div>
           </div>
         </div>
-        <div className="container">
+        <div className={styles.text_img}>
           <div className={styles.container1}>
-            <div>
-              <div className="composite-image">
-                <div className="composite-image-container">
-                  <div className="image-wrapper image-1-container">
-                    <img
-                      src="/images/discover-img1.png"
-                      alt="Discover"
-                      className={styles.image1}
-                    />
-                  </div>
+            <div className="composite-image">
+              <div className="composite-image-container">
+                <div className="image-wrapper image-1-container">
+                  <img
+                    src="/images/discover-img1.png"
+                    alt="Discover"
+                    className={styles.image1}
+                  />
+                </div>
 
-                  <div className="image-wrapper image-2-container">
-                    <img src="/images/discover-img2.jpg" alt="Discover" />
-                  </div>
+                <div className="image-wrapper image-2-container">
+                  <img
+                    src="/images/discover-img2.jpg"
+                    alt="Discover"
+                    className={styles.image1}
+                  />
                 </div>
               </div>
             </div>
@@ -114,85 +116,87 @@ export default function Home() {
           </div>
         </div>
         <h2 className={styles.solutions}>Our Products</h2>
-        <div className="container">
-          <div className="row">
-            <div className="col-3">
-              <div className={styles.flipCard}>
-                <div className={styles.flipCardInner}>
-                  <div className={styles.flipCardFront}>
-                    <img
-                      src="/images/simba.png"
-                      alt="Simba"
-                      className={`card-img-top ${styles.customImage}`}
-                    />
-                  </div>
-                  <div className={styles.flipCardBack}>
-                    <h5>Simba 4G Speed Governor</h5>
-                    <p className={styles.flipCardText}>
-                      We have been licensed to deploy IoT devices that track,
-                      limit speed, and transmit live data to the National
-                      Transport and Safety Authority. So far, our Nairobi
-                      factory has produced and connected over 15,000 devices
-                      under the brand name Simba Speed Governor.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-3">
-              <div className={styles.flipCard}>
-                <div className={styles.flipCardInner}>
-                  <div className={styles.flipCardFront}>
-                    <img
-                      src="/images/bundi.jpeg"
-                      alt="bundi"
-                      className={`card-img-top ${styles.customImage}`}
-                    />
-                  </div>
-                  <div className={styles.flipCardBack}>
-                    <h5>Bundi Vehicle Tracking & Security</h5>
-                    <p className={styles.flipCardText}>
-                      Numeral IOT has created firmware, hardware, and software
-                      for the BUNDI tracking device and car security system. The
-                      tracking device is intended to serve Kenya's and East
-                      Africa's large motorcycle and tuk tuk population.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-3">
-              <div className={styles.flipCard}>
-                <div className={styles.flipCardInner}>
-                  <div className={styles.flipCardFront}>
-                    <img
-                      src="/images/gas.jpeg"
-                      alt="gas"
-                      className={`card-img-top ${styles.customImage}`}
-                    />
-                  </div>
-                  <div className={styles.flipCardBack}>
-                    <h5>NIOT Smart Power Meter</h5>
-                    <p className={styles.flipCardText}>
-                      Smart meters communicate through a home area network (HAN)
-                      when inside your home to send consumption details to your
-                      Phone or computer.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-3">
-              <div className="card">
+        <div className={styles.productContainer}>
+          <div className={styles.flipCard}>
+            <div className={styles.flipCardInner}>
+              <div className={styles.flipCardFront}>
                 <img
-                  src="/images/Lipa-Cashless.jpg"
-                  alt="bundi"
+                  src="/images/simba.png"
+                  alt="Simba"
                   className={`card-img-top ${styles.customImage}`}
                 />
+              </div>
+              <div className={styles.flipCardBack}>
+                <h5>Simba 4G Speed Governor</h5>
+                <p className={styles.flipCardText}>
+                  We have been licensed to deploy IoT devices that track, limit
+                  speed, and transmit live data to the National Transport and
+                  Safety Authority. So far, our Nairobi factory has produced and
+                  connected over 15,000 devices under the brand name Simba Speed
+                  Governor.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className={styles.flipCard}>
+            <div className={styles.flipCardInner}>
+              <div className={styles.flipCardFront}>
+                <img
+                  src="/images/bundi.jpeg"
+                  alt="Bundi"
+                  className={`card-img-top ${styles.customImage}`}
+                />
+              </div>
+              <div className={styles.flipCardBack}>
+                <h5>Bundi Vehicle Tracking & Security</h5>
+                <p className={styles.flipCardText}>
+                  Numeral IOT has created firmware, hardware, and software for
+                  the BUNDI tracking device and car security system. The
+                  tracking device is intended to serve Kenya's and East Africa's
+                  large motorcycle and tuk tuk population.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className={styles.flipCard}>
+            <div className={styles.flipCardInner}>
+              <div className={styles.flipCardFront}>
+                <img
+                  src="/images/gas.jpeg"
+                  alt="Gas"
+                  className={`card-img-top ${styles.customImage}`}
+                />
+              </div>
+              <div className={styles.flipCardBack}>
+                <h5>NIOT Smart Power Meter</h5>
+                <p className={styles.flipCardText}>
+                  Smart meters communicate through a home area network (HAN)
+                  when inside your home to send consumption details to your
+                  Phone or computer.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className={styles.flipCard}>
+            <div className={styles.flipCardInner}>
+              <div className={styles.flipCardFront}>
+                <img
+                  src="/images/Lipa-Cashless.jpg"
+                  alt="Lipa Cashless"
+                  className={`card-img-top ${styles.customImage}`}
+                />
+              </div>
+              <div className={styles.flipCardBack}>
+                <h5>Lipa Cashless System</h5>
+                <p className={styles.flipCardText}>
+                  The Lipa Cashless system provides seamless and secure payment
+                  solutions, enhancing convenience for users and vendors alike.
+                </p>
               </div>
             </div>
           </div>
         </div>
+
         <h2 className={styles.solutions}>Why Choose Us</h2>
 
         <div className={styles.solutionsContainer}>
@@ -232,102 +236,54 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className="container">
-          <h2 className={styles.solutions}>Some of our esteemed Customers</h2>
-          <div className="row">
-            <div className="col-md-3 col-sm-6">
-              <img
-                src="/images/Equity-Bank.png"
-                alt="Equity Bank"
-                className={styles.customerImage}
-              />
-            </div>
-            <div className="col-md-3 col-sm-6">
-              <img
-                src="/images/Kenya-Railways.png"
-                alt="Kenya Railways"
-                className={styles.customerImage}
-              />
-            </div>
-            <div className="col-md-3 col-sm-6">
-              <img
-                src="/images/Kenya-Women-Microfinance-Bank.png"
-                alt="Kenya Women Microfinance"
-                className={styles.customerImage}
-              />
-            </div>
-            <div className="col-md-3 col-sm-6">
-              <img
-                src="/images/kyoga-hauliers.jpg"
-                alt="kyoga hauliers"
-                className={styles.customerImage}
-              />
-            </div>
+        <h2 className={styles.solutions}>Some of our esteemed Customers</h2>
+
+        <div className={styles.customerContainer}>
+          <div className={styles.cussy}>
+            <img src="/images/Equity-Bank.png" alt="Equity Bank" />
+          </div>
+          <div className={styles.cussy}>
+            <img src="/images/Kenya-Railways.png" alt="Kenya Railways" />
+          </div>
+          <div className={styles.cussy}>
+            <img
+              src="/images/Kenya-Women-Microfinance-Bank.png"
+              alt="Kenya Women Microfinance"
+            />
+          </div>
+          <div className={styles.cussy}>
+            <img src="/images/kyoga-hauliers.jpg" alt="kyoga hauliers" />
           </div>
         </div>
         <div className={styles.contacts}>
           <h2 className={styles.solutions}>Contact Us</h2>
           <div className={styles.customersContainer}>
-            <div className="row">
-              <div className="col-md-4 mb-3">
-                <div className="card">
-                  <div className="card-body">
-                    <h2 className={styles.card_title}>Phone Number</h2>
-                    <p className={styles.card_text}>+254 794 475 599</p>
-                  </div>
-                </div>
+            <div className={styles.card}>
+              <div className={styles.cardBody}>
+                <h2 className={styles.cardTitle}>Phone Number</h2>
+                <p className={styles.cardText}>+254 794 475 599</p>
               </div>
-              <div className="col-md-4 mb-3">
-                <div className="card">
-                  <div className="card-body">
-                    <h2 className={styles.card_title}>Office Location</h2>
-                    <p className={styles.card_text}>
-                      Solanite Limited godowns Mombasa Road, Carbanas stage near
-                      Tuskys Headquarters
-                    </p>
-                  </div>
-                </div>
+            </div>
+            <div className={styles.card}>
+              <div className={styles.cardBody}>
+                <h2 className={styles.cardTitle}>Office Location</h2>
+                <p className={styles.cardText}>
+                  Solanite Limited godowns Mombasa Road, Carbanas stage near
+                  Tuskys Headquarters
+                </p>
               </div>
-              <div className="col-md-4 mb-3">
-                <div className="card">
-                  <div className="card-body">
-                    <h2 className={styles.card_title}>Email Address</h2>
-                    <p className={styles.card_text}>info@numeraliot.com</p>
-                  </div>
-                </div>
+            </div>
+            <div className={styles.card}>
+              <div className={styles.cardBody}>
+                <h2 className={styles.cardTitle}>Email Address</h2>
+                <p className={styles.cardText}>info@numeraliot.com</p>
               </div>
             </div>
           </div>
         </div>
-        
       </main>
 
       <Footer />
     </>
   );
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -12,8 +12,16 @@ const Client = () => {
       <div>
         <Navigation />
         <main className={styles.hero}>
+        <div className={styles.img}>
+              <img
+                src="/images/background1.jpg"
+                alt="background"
+                className="img-fluid"
+              />
+               </div>
+               <div>
           <div className="container">
-            <div >
+            
               <h1 className={styles.title}>Our Clients</h1>
               <p className={styles.description}>
                 Some of our Esteemed Clients.
@@ -81,7 +89,8 @@ const Client = () => {
                 </div>
               </div>
             </div>
-          </div>
+            </div>
+         
         </main>
 
         <Footer />

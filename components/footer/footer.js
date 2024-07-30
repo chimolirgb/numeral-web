@@ -14,10 +14,12 @@ const Footer = () => {
             <h5>WHO WE ARE</h5>
             <div>
               <div className="card-body">
-                <p>
+                <div>
+                  <p className="card-text">
                   Numeral IOT is an electronic design and manufacturing company
                   which specializes in the research, development and production
                   of smart electronics devices.
+                  </p>
                   <br />
                   <div className={styles.infoItem}>
                     <FaMapMarkerAlt className={styles.icon} />
@@ -46,7 +48,7 @@ const Footer = () => {
                   <a href="mailto:rnd@numeraliot.com" className="text-white">
                     Ideas & Solutions | rnd@numeraliot.com
                   </a>
-                </p>
+                </div>
               </div>
             </div>
           </div>
