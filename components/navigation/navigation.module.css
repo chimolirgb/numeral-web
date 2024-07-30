@@ -168,7 +168,6 @@
 .overlay {
   text-align: center;
   color: white;
-  /* padding: 10px; */
 }
 
 .h1 {
@@ -376,19 +375,24 @@
 
 .readMore {
   display: inline-block;
+ 
   margin-top: 10px;
-  color: #fff;
+  color: 099673;
   font-size: 14px;
   font-weight: 600;
   padding: 10px 20px;
-  background-color: #198754;
   border-radius: 5px;
   text-decoration: none;
   transition: background-color 0.3s, color 0.3s;
 }
 
 .readMore:hover {
-  background-color: #20c997;
+  background: linear-gradient(
+    135deg,
+    #20c997,
+    #0dcaf0
+  ); /* Linear gradient on hover */
+ 
   color: white;
 }
 

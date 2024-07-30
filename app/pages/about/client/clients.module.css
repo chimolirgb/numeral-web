@@ -21,43 +21,51 @@
   max-width: 100%;
   height: auto;
   display: block;
-  
 }
 
 .wrapper {
   position: relative;
-  display: inline-block; /* Ensure that the wrapper adjusts to the size of its content */
+  display: inline-block;
 }
 
 .wrapper img {
-  border-radius: 100px; /* Initially round border */
-  border: 2px solid #ccc; /* Border around images */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for better visual appeal */
-  transition: border-radius 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+  border-radius: 100px;
+  border: 2px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: border-radius 0.3s ease, background-color 0.3s ease;
+
   position: relative;
-  z-index: 1; /* Ensure image is above the gradient */
+  z-index: 1;
   padding: 20px;
 }
 
 .wrapper::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  border-radius: 100px; /* Match the initial round border of the image */
-  z-index: -1; /* Place behind the image */
-  opacity: 0; /* Initially hidden */
-  transition: opacity 0.3s ease; /* Smooth transition */
+  border-radius: 100px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 .wrapper:hover img {
-  border-radius: 0; /* Rectangular border on hover */
-  border-color: #20c997; /* Optional: Change border color on hover */
+  border-radius: 0;
+  /* border-color: #20c997; */
 }
 
 .wrapper:hover::before {
-  opacity: 1; /* Show gradient background on hover */
-  border-radius: 0; /* Match the rectangular border on hover */
+  opacity: 1;
+  border-radius: 0;
+}
+
+.hero {
+  background: linear-gradient(135deg, #43e794, #23bdb8);
+  height: 100%;
+    margin: 0;
+    padding: 0;
+
 }

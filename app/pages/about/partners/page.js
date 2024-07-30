@@ -11,7 +11,8 @@ const Partners = () => {
       <Header />
     <div>
       <Navigation />
-      <main>
+      <main className={styles.hero}>
+        <div className="container">
         <h1 className={styles.title}>Our Partners</h1>
         <p className={styles.description}>Some of our partners</p>
         <div className={`container ${styles.customersContainer}`}>
@@ -77,6 +78,7 @@ const Partners = () => {
             </div>
           </div>
         </div>
+      </div>
         
       </main>
 
