@@ -1,0 +1,117 @@
+.container1 {
+  display: block;
+  width: 580px;
+  font-style: normal;
+  margin: 50px;
+  padding: 16px;
+  font-size: 14px;
+  font-weight: 400;
+  border: 0px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.content1 {
+  flex: 8;
+  padding-right: 20px;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
+}
+
+.content p {
+  margin: 0 0 13.5px;
+  color: #707070;
+  line-height: 1.8;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+.content p:last-child {
+  margin-bottom: 0;
+}
+
+.title {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.image4 {
+  width: 50%;
+  height: auto;
+  position: absolute;
+  margin-left: 620px;
+}
+
+
+.content4 {
+  flex: 10;
+  padding-right: 20px;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
+  margin-left: 550px;
+}
+
+.container2 {
+  display: block;
+  max-width: 580px;
+  font-style: normal;
+  margin: 50px;
+  padding: 16px;
+  font-size: 14px;
+  font-weight: 400;
+  border: 0px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.image5 {
+  width: 50%;
+  height: auto; /* maintains the aspect ratio of the image */
+  position: absolute;
+  padding: 50px;
+}
+
+
+
+
+
+/* For screens smaller than 360px */
+@media (max-width: 360px) {
+  .container1, .container2 {
+    width: 100%;
+    padding:5px;
+    margin: 250px;
+    margin-left: 5px;
+    margin-bottom: auto;
+  }
+
+  .content1, .content4 {
+    margin: 0; 
+    padding: 0; 
+  }
+
+  .content h1, .content4 h1 {
+    font-size: 1.2rem;
+  }
+
+  .content p, .content4 p {
+    font-size: 0.75rem; 
+    line-height: 1.6; 
+  }
+
+  .image4, .image5 {
+    width: 100%;
+    height: auto; 
+    margin: 0; 
+    padding: 0;
+    width: 100%;
+  }
+}
+
+/* for screens larger than 760px */
+
