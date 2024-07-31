@@ -20,7 +20,7 @@ const Network = () => {
         </div>
       <div className={styles.container}>
       <div className={styles.content}>
-        <h1 className="title">Network Solutions</h1>
+        <h1 className={styles.title}>Network Solutions</h1>
         <p>
           Our devices are designed with connectivity in mind. They are equipped
           with network protocols such as WiFi and cellular, allowing them to

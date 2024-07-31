@@ -25,7 +25,7 @@ const User = () => {
               <div className="col-12">
                 <div className={styles.container}>
                   <div className={styles.content}>
-                    <h1 className="title">Software Development</h1>
+                    <h1 className={styles.title}>Software Development</h1>
                     <p>
                       The software department complements the hardware team. We
                       believe that technology should be easy to use and

@@ -25,7 +25,7 @@ const Hardware = () => {
               <div className="col-12">
                 <div className={styles.container}>
                   <div className={styles.content}>
-                    <h1 className="title">Hardware Manufacturing</h1>
+                    <h1 className={styles.title}>Hardware Manufacturing</h1>
                     <p className={styles.content}>
                       We prioritize sensors and manufacturing techniques that
                       allow us to create low-cost IOT devices. Our focus on
@@ -61,7 +61,7 @@ const Hardware = () => {
               <div className="col-12">
                 <div className={styles.container1}>
                   <div className={styles.content1}>
-                    <h2 className="title">The Manufacturing Process:</h2>
+                    <h2 className={styles.title}>The Manufacturing Process:</h2>
                     <p>1. 001 Solder paste mixing</p>
                     <p>2. 002 PCB Stencil Printing</p>
                     <p>3. 003 PCB Automatic loading</p>

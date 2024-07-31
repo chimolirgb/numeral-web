@@ -22,7 +22,7 @@ const Platform = () => {
             <div className="col-12">
       <div className={styles.container}>
       <div className={styles.content}>
-        <h1 className="title">IOT Platform</h1>
+        <h1 className={styles.title}>IOT Platform</h1>
         <p>
           Our platform serves as a central hub for storing, processing, and
           analyzing data from the iot devices. It also provides tools for
