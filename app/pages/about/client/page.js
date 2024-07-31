@@ -16,7 +16,7 @@ const Client = () => {
               <img
                 src="/images/background1.jpg"
                 alt="background"
-                className="img-fluid"
+                className={styles.background}
               />
                </div>
                <div>

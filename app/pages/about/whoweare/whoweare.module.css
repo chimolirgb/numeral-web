@@ -1,31 +1,21 @@
 .container1 {
-  display: block;
-  width: 580px;
+  /* display: flex; */
+
+  width: 510px;
   font-style: normal;
   margin: 50px;
-  padding: 16px;
-  font-size: 14px;
+  padding: 12px;
+  font-size: 15px;
   font-weight: 400;
-  border: 0px solid #ddd;
-  border-radius: 8px;
-  background-color: #fff;
-}
-
-.content1 {
-  flex: 8;
-  padding-right: 20px;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  unicode-bidi: isolate;
 }
 
 .content p {
-  margin: 0 0 13.5px;
+  margin: 0 0 8.5px;
   color: #707070;
   line-height: 1.8;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
+  margin-right: 300px;
+  width: 100%;
 }
 
 .content p:last-child {
@@ -39,11 +29,11 @@
 
 .image4 {
   width: 50%;
-  height: auto;
+  height: 30%;
   position: absolute;
-  margin-left: 620px;
+  margin-left: 600px;
+  margin-top: 120px;
 }
-
 
 .content4 {
   flex: 10;
@@ -74,44 +64,141 @@
   height: auto; /* maintains the aspect ratio of the image */
   position: absolute;
   padding: 50px;
+  margin-top: 170px;
 }
 
+.title {
+  font-size: 28px;
+  font-weight: 600;
+  padding: 26px;
+  position: relative;
+  line-height: 32px;
+  margin-top: 50px;
+}
+.description {
+  font-size: 25px;
+  font-weight: 600;
+  padding: 26px;
+  text-align: center;
+}
 
+.customersContainer {
+  padding: 10px;
+}
 
+.customers img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 
+.wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.wrapper img {
+  border-radius: 100px;
+  border: 2px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: border-radius 0.3s ease, background-color 0.3s ease;
+
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+}
+
+.wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 100px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.wrapper:hover img {
+  border-radius: 0;
+}
+
+.wrapper:hover::before {
+  opacity: 1;
+  border-radius: 0;
+}
+
+.hero {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 600;
+  padding: 26px;
+  position: relative;
+  line-height: 32px;
+  margin-top: 50px;
+}
+.description {
+  font-size: 25px;
+  font-weight: 600;
+  padding: 26px;
+  text-align: center;
+}
+
+.hero {
+  background: linear-gradient(135deg, #43e794, #23bdb8);
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
 
 /* For screens smaller than 360px */
 @media (max-width: 360px) {
-  .container1, .container2 {
+  .container2 {
     width: 100%;
-    padding:5px;
-    margin: 250px;
+    padding: 5px;
+    margin-top: 150px;
     margin-left: 5px;
-    margin-bottom: auto;
+    
   }
 
-  .content1, .content4 {
-    margin: 0; 
-    padding: 0; 
+  .container1 {
+    width: 100%;
+    padding: 5px;
+    margin-top: 250px;
+    margin-left: 5px;
   }
 
-  .content h1, .content4 h1 {
+  .content1,
+  .content4 {
+    margin: 0;
+    padding: 0;
+  }
+
+  .content h1,
+  .content4 h1 {
     font-size: 1.2rem;
   }
 
-  .content p, .content4 p {
-    font-size: 0.75rem; 
-    line-height: 1.6; 
+  .content p,
+  .content4 p {
+    font-size: 0.75rem;
+    line-height: 1.6;
   }
 
-  .image4, .image5 {
+  .image5 {
     width: 100%;
-    height: auto; 
-    margin: 0; 
+    height: auto;
+    margin: 0;
     padding: 0;
     width: 100%;
   }
 }
 
 /* for screens larger than 760px */
-

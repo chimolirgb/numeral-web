@@ -6,7 +6,7 @@ import styles from "./footer.module.css";
 import Link from "next/link";
 const Footer = () => {
   return (
-    <footer className="bg-dark text-white pt-5">
+    <footer className={styles.footer}>
       <div className="container">
         <div className="row">
           {/* WHO WE ARE */}
