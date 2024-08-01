@@ -291,7 +291,7 @@
 
 .solution h2 {
   margin-top: 0;
-  color: #009598;
+  color: black;
   font-size: 20px;
   font-weight: 600;
   transition: color 0.3s;
@@ -398,7 +398,7 @@
   display: inline-block;
 
   margin-top: 10px;
-  color: 099673;
+  color: #00B7AA;
   font-size: 14px;
   font-weight: 600;
   padding: 10px 20px;
