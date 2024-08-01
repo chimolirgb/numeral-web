@@ -4,6 +4,14 @@ import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaClock } from "react-icons/fa";
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "./footer.module.css";
 import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebook,
+  faInstagram,
+  faLinkedin,
+  faTiktok,
+} from "@fortawesome/free-brands-svg-icons";
+
 const Footer = () => {
   return (
     <footer className={styles.footer}>
@@ -11,76 +19,48 @@ const Footer = () => {
         <div className="row">
           {/* WHO WE ARE */}
           <div className="col-md-3 mb-4">
-            <h5>WHO WE ARE</h5>
-            <div>
-              <div className="card-body">
-                <div>
-                  <p className="card-text">
+            <h5>Who we are</h5>
+            <div className="card-body">
+              <div>
+                <p className="card-text">
                   Numeral IOT is an electronic design and manufacturing company
                   which specializes in the research, development and production
                   of smart electronics devices.
-                  </p>
-                  <br />
-                  <div className={styles.infoItem}>
-                    <FaMapMarkerAlt className={styles.icon} />
-                    <span>Solanite Godowns, Mombasa Road, Nairobi, Kenya.</span>
-                  </div>
-                  <br />
-                  <div className={styles.infoItem}>
-                    <FaPhone className={styles.icon} />
-                    <span>0111014700</span>
-                  </div>
-                  <br />
-                  <div className={styles.infoItem}>
-                    <FaEnvelope className={styles.icon} />
-                    <a href="mailto:info@numeraliot.com" className="text-white">
-                      info@numeraliot.com
-                    </a>
-                  </div>
-                  <br />
-                  <a
-                    href="mailto:careers@numeraliot.com"
-                    className="text-white"
-                  >
-                    Jobs | careers@numeraliot.com
-                  </a>
-                  <br />
-                  <a href="mailto:rnd@numeraliot.com" className="text-white">
-                    Ideas & Solutions | rnd@numeraliot.com
-                  </a>
-                </div>
+                </p>
+                <br />
               </div>
             </div>
           </div>
           {/* SOLUTIONS & PORTFOLIO */}
           <div className="col-md-3 mb-4">
-            <h5>SOLUTIONS & PORTFOLIO</h5>
             <div>
-              <div className="card-body">
-                <p>
-                  <Link href="/pages/solutions/hardware" className="text-white">
-                    Hardware Manufacturing
-                  </Link>
-                  <br />
-                  <Link href="/pages/solutions/user" className="text-white">
-                    User Application
-                  </Link>
-                  <br />
-                  <Link href="/pages/solutions/platform" className="text-white">
-                    IOT Platform
-                  </Link>
-                  <br />
-                  <Link href="/pages/solutions/network" className="text-white">
-                    Network Connectivity
-                  </Link>
-                </p>
+              <h5> Get in touch </h5>
+              <div className={styles.infoItem}>
+                <FaMapMarkerAlt className={styles.icon} />
+                <span>Solanite Godowns, Mombasa Road, Nairobi, Kenya.</span>
               </div>
+              <br />
+              <div className={styles.infoItem}>
+                <FaPhone className={styles.icon} />
+                <span>0111014700</span>
+              </div>
+              <br />
+              <div className={styles.infoItem}>
+                <FaEnvelope className={styles.icon} />
+                <a href="mailto:info@numeraliot.com" className="text-white">
+                  info@numeraliot.com
+                </a>
+              </div>
+              <br />
+              <a href="mailto:careers@numeraliot.com" className="text-white">
+                Jobs | careers@numeraliot.com
+              </a>
             </div>
           </div>
           {/* QUICK LINKS */}
 
           <div className="col-md-3 mb-4">
-            <h5>QUICK LINKS</h5>
+            <h5>Quick links</h5>
             <div>
               <div className="card-body">
                 <p>
@@ -92,12 +72,12 @@ const Footer = () => {
                     Our History
                   </Link>
                   <br />
-                  <Link href="/pages/about/client" className="text-white">
-                    Our Clients
+                  <Link href="/pages/blog" className="text-white">
+                    Our Blogs
                   </Link>
                   <br />
-                  <Link href="/pages/about/partners" className="text-white">
-                    Our Partners
+                  <Link href="/pages/contact" className="text-white">
+                    Our Contacts
                   </Link>
                   <br />
                   <Link href="/pages/solutions/hardware" className="text-white">
@@ -118,7 +98,7 @@ const Footer = () => {
 
           {/* NEWSLETTER SIGNUP */}
           <div className="col-md-3 mb-4">
-            <h5>NEWSLETTER SIGNUP</h5>
+            <h5>Newsletter Signup</h5>
             <div>
               <div className="card-body">
                 <p>Subscribe to get latest updates</p>
@@ -154,9 +134,60 @@ const Footer = () => {
           </div>
         </div>
         <hr className="footer-divider" />
-        <div className="footer-copyright">
-          <p>Copyright 2024 Numeral IOT | All Rights Reserved.</p>
-        </div>
+        <div className={styles.footerCopyright}>
+          <div className={styles.footerItem}>
+            <p>Copyright © 2024 Numeral IoT </p>
+          </div>
+          <div className={styles.footerItem}>
+            <p>All rights reserved</p>
+          </div>
+          <div className={styles.footerItem}>
+            <p>Terms & Conditions</p>
+          </div>
+          <div className={styles.footerItem}>
+            <p>Privacy Policy</p>
+          </div>
+          
+          {/* <div className={styles.infoItem}>
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon
+                icon={faFacebook}
+                className={styles.socialIcon}
+              />
+            </a>
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon
+                icon={faInstagram}
+                className={styles.socialIcon}
+              />
+            </a>
+            <a
+              href="https://www.linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon
+                icon={faLinkedin}
+                className={styles.socialIcon}
+              />
+            </a>
+            <a
+              href="https://www.tiktok.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon icon={faTiktok} className={styles.socialIcon} />
+            </a>
+          </div> */}
+          </div>
       </div>
     </footer>
   );

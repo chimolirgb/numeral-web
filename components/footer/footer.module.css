@@ -6,6 +6,38 @@
 
 .icon {
   margin-right: 6px;
+
+  color: black;
+}
+
+
+
+.footerCopyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.footerItem {
+  margin: 0 15px; 
+  font-size: 14px;
+}
+
+.footerItem p {
+  margin: 0;
+  color: white; 
+}
+
+.socialIcon {
+  margin: 0 3px; 
+  color: #333;
+  font-size: 14px; 
+ 
+}
+
+.socialIcon:hover {
+  color: #007bff; /* Change icon color on hover */
 }
 
 @media (max-width: 360px) {
