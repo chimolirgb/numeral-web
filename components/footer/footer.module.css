@@ -29,22 +29,13 @@
   color: white; 
 }
 
-.socialIcon {
-  margin: 0 3px; 
-  color: #333;
-  font-size: 14px; 
- 
-}
 
-.socialIcon:hover {
-  color: #007bff; /* Change icon color on hover */
-}
 
 @media (max-width: 360px) {
   .header {
     flex-direction: column;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .infoItem {
@@ -52,12 +43,13 @@
   }
 }
 
+
 @media (min-width: 361px) and (max-width: 760px) {
   .header {
     flex-direction: row;
     justify-content: space-between;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .infoItem {
