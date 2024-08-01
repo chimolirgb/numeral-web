@@ -291,7 +291,7 @@
 
 .solution h2 {
   margin-top: 0;
-  color: #000;
+  color: #009598;
   font-size: 20px;
   font-weight: 600;
   transition: color 0.3s;
@@ -311,10 +311,10 @@
 }
 
 .solutions {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 600;
   text-align: center;
-  color: #000;
+  color: black;
   margin-top: 50px;
 }
 
