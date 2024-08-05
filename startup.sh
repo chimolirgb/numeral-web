@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Pull changes from the main branch
-git pull origin main
+git pull origin master
 
 # Kill and remove the current Docker container
 echo "Killing and removing the current Docker container..."
@@ -17,6 +17,6 @@ docker build -t numeral-iot .
 
 # Run the Docker container
 echo "Starting the Docker container..."
-docker run --restart always -d --name numeral-iot -p 9798:3000 numeral-iot
+docker run --restart always -d --name numeral-iot -p 9799:3000 numeral-iot
 
 echo "Deployment completed successfully."
