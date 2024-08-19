@@ -74,6 +74,94 @@ const Hardware = () => {
               </div>
             </div>
           </div>
+
+          <div className="container">
+            <div className="row">
+              <div className="col-6">
+                <img
+                  src="/images/new-01.jpg"
+                  className={`${styles.image1} img-fluid`}
+                />
+              </div>
+            </div>
+            <div className={styles.container}>
+              <div className={styles.content}>
+                <h1 className={styles.title}>Network Solutions</h1>
+                <p>
+                  Our devices are designed with connectivity in mind. They are
+                  equipped with network protocols such as WiFi and cellular,
+                  allowing them to communicate over the internet and connect to
+                  a wide range of networks. This enables them to exchange data,
+                  receive updates, and be remotely controlled from anywhere with
+                  an internet connection. Whether you need to connect your
+                  devices at home, at the office, or on the go, our devices have
+                  you covered.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="container">
+            <div className="row">
+              <div className="col-6">
+                <img
+                  src="/images/Software-user2.jpg"
+                  className={`${styles.image3} img-fluid`}
+                />
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-12">
+                <div className={styles.container2}>
+                  <div className={styles.content2}>
+                    <h1 className={styles.title}>Software Development</h1>
+                    <p>
+                      The software department complements the hardware team. We
+                      believe that technology should be easy to use and
+                      accessible to everyone. That’s why we design user-friendly
+                      software and mobile apps that allow users to monitor and
+                      manage data from their devices. Whether you’re a business
+                      owner looking to keep track of your asset, or a homeowner
+                      interested in managing your energy consumption, our apps
+                      provide the tools you need to stay connected and in
+                      control.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="container">
+            <div className="row">
+              <div className="col-6">
+                <img
+                  src="/images/iso-01.png"
+                  className={`${styles.image4} img-fluid`}
+                />
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-12">
+                <div className={styles.container}>
+                  <div className={styles.content}>
+                    <h1 className={styles.title}>IOT Platform</h1>
+                    <p>
+                      Our platform serves as a central hub for storing,
+                      processing, and analyzing data from the iot devices. It
+                      also provides tools for visualizing this data in
+                      meaningful ways. We take cyber security and data
+                      protection seriously, and have implemented measures to
+                      ensure the safety and privacy of all data on our platform.
+                      Whether you’re a business looking to gain insights from
+                      your data or an individual looking to manage your own
+                      personal information, you can trust that our platform is
+                      secure and reliable.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </main>
 
         <Footer />
