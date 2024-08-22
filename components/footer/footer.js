@@ -147,47 +147,7 @@ const Footer = () => {
           <div className={styles.footerItem}>
             <p>Privacy Policy</p>
           </div>
-          
-          {/* <div className={styles.infoItem}>
-            <a
-              href="https://www.facebook.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FontAwesomeIcon
-                icon={faFacebook}
-                className={styles.socialIcon}
-              />
-            </a>
-            <a
-              href="https://www.instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FontAwesomeIcon
-                icon={faInstagram}
-                className={styles.socialIcon}
-              />
-            </a>
-            <a
-              href="https://www.linkedin.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FontAwesomeIcon
-                icon={faLinkedin}
-                className={styles.socialIcon}
-              />
-            </a>
-            <a
-              href="https://www.tiktok.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FontAwesomeIcon icon={faTiktok} className={styles.socialIcon} />
-            </a>
-          </div> */}
-          </div>
+        </div>
       </div>
     </footer>
   );

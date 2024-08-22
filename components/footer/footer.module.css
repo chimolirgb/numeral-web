@@ -26,6 +26,9 @@
   margin: 0;
   color: white;
 }
+/* .footer{
+  background-color: #3c65c7;
+} */
 
 @media (max-width: 360px) {
   .header {
@@ -68,5 +71,6 @@
 
 .footer {
   /* background: linear-gradient(135deg, #20c997, #0dcaf0); */
-  background-color: #56cda7;
+  background-color: #009673;
+  padding: 50px;
 }

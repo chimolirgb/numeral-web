@@ -30,16 +30,13 @@ export default function Home() {
               className={styles.image}
             />
           </div>
-          {/* <Link href="/pages/about/whoweare" passHref>
-            <button className={styles.home}>Get started</button>
-          </Link> */}
 
           <div className={styles.gradient}>
             <div className={styles.overlay}>
               <p className={styles.ptop}>
                 We are on a mission to build Africa's largest IoT service
                 platform, powered by our
-                <span className={styles.highlight1}>proprietary hardware</span>
+                proprietary hardware
               </p>
             </div>
           </div>
@@ -146,7 +143,7 @@ export default function Home() {
         <div className={styles.text_img2}>
           <div className="container">
             <div className="row">
-              <h2 className={styles.solutions}>Our Products</h2>
+              <h3 className={styles.solutions1}>Our Products</h3>
               <div className={styles.productContainer}>
                 <div className={styles.flipCard}>
                   <div className={styles.flipCardInner}>
@@ -233,7 +230,7 @@ export default function Home() {
         </div>
         <div className="container">
           <div className="row">
-            <h2 className={styles.solutions}>Why Choose Us</h2>
+            <h2 className={styles.solutions3}>Why Choose Us</h2>
 
             <div className={styles.solutionsContainer}>
               <div className={styles.solution}>
@@ -298,7 +295,7 @@ export default function Home() {
         <div className={styles.text_img3}>
           <div className="container">
             <div className="row">
-              <h2 className={styles.solutions}>
+              <h2 className={styles.solutions4}>
                 Some of our esteemed Customers
               </h2>
 
@@ -333,7 +330,7 @@ export default function Home() {
         <div className="container">
           <div className="row">
             <div className={styles.contacts}>
-              <h2 className={styles.solutions}>Contact Us</h2>
+              <h2 className={styles.solutions5}>Contact Us</h2>
               <div className={styles.customersContainer}>
                 <div className={styles.card}>
                   <div className={styles.cardBody}>

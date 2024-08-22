@@ -1,45 +1,115 @@
-
-.blogContainer {
-  padding: 20px;
-  max-width: 1200px;
-  margin: auto;
+.sidebar {
+  padding: 1rem;
+  margin-top: 200px;
 }
 
-.blogCard {
+.imageGrid {
+  display: grid;
+  gap: 4rem;
+}
+
+.row {
   display: flex;
-  flex-direction: column;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  margin: 200px 0;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.imageCard {
+  position: relative;
+  width: 48%; /* Ensures two images fit in one row */
+  height: 250px;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-bottom: 2rem;
 }
 
-.blogImage {
+.imageCard img {
   width: 100%;
-  height: auto;
-}
-x .blogContent {
-  padding: 20px;
-}
-
-.blogDate {
-  color: #888;
-  margin: 10px 0;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
-@media (min-width: 600px) {
-  .blogCard {
-    flex-direction: row;
-  }
+.cardOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  background: white;
+  padding: 0.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
 
-  .blogImage {
-    width: 40%;
-    height: auto;
-  }
+.cardContent {
+  text-align: center;
+}
 
-  .blogContent {
-    width: 60%;
-    padding: 20px;
-  }
+.date {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.excerpt {
+  font-size: 0.9rem;
+  font-weight: 1rem;
+}
+
+.searchBar input {
+  width: 15%; /* Ensures search bar fills its container */
+  padding: 0.5rem;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  margin-bottom: 1rem;
+  margin-top: 60px;
+  margin-left: 900px;
+}
+
+.popularPosts,
+.categories,
+.tags {
+  margin-bottom: 2rem;
+  align-items: center;
+}
+
+.popularPosts h3,
+.categories h3,
+.tags h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.popularPosts ul,
+.categories ul,
+.tags ul {
+  list-style: none;
+  padding: 0;
+}
+
+.popularPosts li,
+.categories li,
+.tags li {
+  margin-bottom: 0.5rem;
+}
+
+.popularPosts a,
+.categories a,
+.tags a {
+  text-decoration: none;
+  color: #198754;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.pagination a {
+  padding: 0.5rem;
+  border-radius: 5px;
+  background-color: #f8f9fa;
+  color: #198754;
+  text-decoration: none;
 }

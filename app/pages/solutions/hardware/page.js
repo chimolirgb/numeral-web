@@ -1,3 +1,5 @@
+"use client";
+import { useState } from "react";
 import React from "react";
 import Navigation from "@/components/navigation/navigation";
 import styles from "./hardware.module.css";
@@ -6,6 +8,11 @@ import Header from "@/components/header/header";
 import Footer from "@/components/footer/footer";
 
 const Hardware = () => {
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const toggleReadMore = () => {
+    setIsExpanded(!isExpanded);
+  };
   return (
     <>
       <Header />
@@ -14,95 +21,119 @@ const Hardware = () => {
         <main>
           <div className="container">
             <div className="row">
-              <div className="col-6">
-                <img
-                  src="/images/Hardware-2.jpg"
-                  className={`${styles.image1} img-fluid`}
-                />
-              </div>
-            </div>
-            <div className="row">
-              <div className="col-12">
-                <div className={styles.container}>
-                  <div className={styles.content}>
-                    <h1 className={styles.title}>Hardware Manufacturing</h1>
-                    <p className={styles.content}>
-                      We prioritize sensors and manufacturing techniques that
-                      allow us to create low-cost IOT devices. Our focus on
-                      these areas allows us to provide affordable solutions for
-                      Iot Adoption. Whether it’s for industrial or personal use,
-                      we strive to make IoT technology accessible and
-                      cost-effective for all africans.
-                    </p>
-                    <p>
-                      A Surface Mount Technology (SMT) machine is used to mount
-                      electronic components to the surface of the printed
-                      circuit board (PCB) as opposed to inserting components
-                      through holes as with conventional assembly.
-                    </p>
-                    <p>
-                      We produce our own custom devices because we understand
-                      that Africa is a price-sensitive market where low-cost
-                      devices are essential.
-                    </p>
+              <div className={styles.flexContainer}>
+                <div className={styles.textImagePair}>
+                  <div className="col-6">
+                    <div className={styles.textContent}>
+                      <h1 className={styles.title}>Hardware Manufacturing</h1>
+                      <p className={styles.content}>
+                        We prioritize sensors and manufacturing techniques that
+                        allow us to create low-cost IOT devices. Our focus on
+                        these areas
+                      </p>
+                      {isExpanded && (
+                        <>
+                          <p>
+                            allows usto provide affordable solutions for IoT
+                            Adoption. Whether it’s for industrial or personal
+                            use, we strive to make IoT technology accessible and
+                            cost-effective for all Africans. A Surface Mount
+                            Technology (SMT) machine is used to mount electronic
+                            components to the surface of the printed circuit
+                            board (PCB) as opposed to inserting components
+                            through holes as with conventional assembly.
+                          </p>
+                          <p>
+                            We produce our own custom devices because we
+                            understand that Africa is a price-sensitive market
+                            where low-cost devices are essential.
+                          </p>
+                        </>
+                      )}
+                      <button
+                        onClick={toggleReadMore}
+                        className={styles.readMoreButton}
+                      >
+                        {isExpanded ? "Read Less" : "Read More"}
+                      </button>
+                    </div>
+                  </div>
+                  <div className="col-6">
+                    <img
+                      src="/images/Hardware-2.jpg"
+                      className={`${styles.image} img-fluid`}
+                    />
                   </div>
                 </div>
-              </div>
-            </div>
-            <div className="row">
-              <div className="col-6">
-                <img
-                  src="/images/Hardware-3.jpg"
-                  className={`${styles.image2} img-fluid`}
-                />
-              </div>
-            </div>
-            <div className="row">
-              <div className="col-12">
-                <div className={styles.container1}>
-                  <div className={styles.content1}>
-                    <h2 className={styles.title}>The Manufacturing Process:</h2>
-                    <p>1. 001 Solder paste mixing</p>
-                    <p>2. 002 PCB Stencil Printing</p>
-                    <p>3. 003 PCB Automatic loading</p>
-                    <p>4. 004 SMT Component Placing</p>
-                    <p>5. 005 Reflow Oven heating</p>
-                    <p>6. 006 Wave soldering</p>
-                    <p>7. 007 Assembly Line</p>
+
+                <div className={styles.textImagePair}>
+                  <div className="col-6">
+                    <div className={styles.textContent}>
+                      <h2 className={styles.title}>
+                        The Manufacturing Process:
+                      </h2>
+                      <p>1. 001 Solder paste mixing</p>
+                      <p>2. 002 PCB Stencil Printing</p>
+                      <p>3. 003 PCB Automatic loading</p>
+
+                      {isExpanded && (
+                        <>
+                          <p>4. 004 SMT Component Placing</p>
+                          <p>5. 005 Reflow Oven heating</p>
+                          <p>6. 006 Wave soldering</p>
+                          <p>7. 007 Assembly Line</p>
+                        </>
+                      )}
+                      <button
+                        onClick={toggleReadMore}
+                        className={styles.readMoreButton}
+                      >
+                        {isExpanded ? "Read Less" : "Read More"}
+                      </button>
+                    </div>
+                  </div>
+                  <div className="col-6">
+                    <img
+                      src="/images/Hardware-3.jpg"
+                      className={`${styles.image} img-fluid`}
+                    />
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="container">
+          <div className={`${styles.container} container`}>
             <div className="row">
               <div className="col-6">
-                <img
-                  src="/images/new-01.jpg"
-                  className={`${styles.image1} img-fluid`}
-                />
-              </div>
-            </div>
-            <div className={styles.container}>
-              <div className={styles.content}>
-                <h1 className={styles.title}>Network Solutions</h1>
-                <p>
-                  Our devices are designed with connectivity in mind. They are
-                  equipped with network protocols such as WiFi and cellular,
-                  allowing them to communicate over the internet and connect to
-                  a wide range of networks. This enables them to exchange data,
-                  receive updates, and be remotely controlled from anywhere with
-                  an internet connection. Whether you need to connect your
-                  devices at home, at the office, or on the go, our devices have
-                  you covered.
-                </p>
+                <div className={styles.imageContainer}>
+                  <img
+                    src="/images/new-01.jpg"
+                    className={`${styles.images} img-fluid`}
+                    alt="Network Solutions"
+                  />
+                  <div className={styles.card}>
+                    <h1 className={styles.title}>Network Solutions</h1>
+                    <p>
+                      Our devices are designed with connectivity in mind. They
+                      are equipped with network protocols such as WiFi and
+                      cellular, allowing them to communicate over the internet
+                      and connect to a wide range of networks. This enables them
+                      to exchange data, receive updates, and be remotely
+                      controlled from anywhere with an internet connection.
+                      Whether you need to connect your devices at home, at the
+                      office, or on the go, our devices have you covered.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-
+         
           <div className="container">
+          
             <div className="row">
+            
               <div className="col-6">
                 <img
                   src="/images/Software-user2.jpg"
@@ -112,9 +143,10 @@ const Hardware = () => {
             </div>
             <div className="row">
               <div className="col-12">
+              
                 <div className={styles.container2}>
                   <div className={styles.content2}>
-                    <h1 className={styles.title}>Software Development</h1>
+                  <h2>Software Development</h2>
                     <p>
                       The software department complements the hardware team. We
                       believe that technology should be easy to use and

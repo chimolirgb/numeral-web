@@ -4,10 +4,12 @@
   width: 510px;
   font-style: normal;
   padding: 2px;
-  font-size: 15px;
+  
   font-weight: 400;
   margin-top: 5px;
 }
+
+
 
 .content p {
   color: #707070;
@@ -15,13 +17,21 @@
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   margin-left: 600px;
   width: 100%;
-  margin-top: -300px;
+  margin-top: -280px;
   padding: 0%;
+  font-size: 15px;
   gap: 0;
 }
+.h2{
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-top: -470px;
+  margin-left: 650px;
+}
+
 
 .title1 {
-  font-size: 18px;
+  font-size: 2.5rem;
   font-weight: 600;
   padding: 26px;
   position: relative;
@@ -42,11 +52,12 @@
   margin-inline-end: 0px;
   unicode-bidi: isolate;
   margin-left: 550px;
+  
 }
 
 .container2 {
   display: block;
-  max-width: 580px;
+  /* max-width: 900px; */
   font-style: normal;
   margin: 50px;
   padding: 16px;
@@ -57,12 +68,44 @@
   background-color: #fff;
 }
 
+.content1{
+  color: #707070;
+  line-height: 1.8;
+  
+}
+
+.cardsContainer {
+  margin-top: -75px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 98px; 
+  padding: 5px; 
+  margin-bottom: 0px;
+  gap: 6px 96px; 
+ 
+}
+
+.card {
+  width: 150%; 
+  background-color: white; 
+  padding: 3px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  border: 1px solid #dee2e6; 
+  margin-top: 10px;
+  margin-bottom: 0px;
+  margin-bottom: 8px;
+}
+
+
 .image5 {
   width: 50%;
-  height: auto; /* maintains the aspect ratio of the image */
+  height: 85%; 
   position: absolute;
   padding: 50px;
-  margin-top: 170px;
+  margin-top: 50px;
+  
+  
 }
 
 .description {
@@ -127,12 +170,13 @@
 }
 
 .title {
-  font-size: 28px;
+  font-size: 2.2rem;
   font-weight: 600;
   padding: 26px;
   position: relative;
   line-height: 32px;
-  margin-top: 50px;
+  margin: 10px;
+  margin-left: 200px;
 }
 .description {
   font-size: 25px;
@@ -164,7 +208,7 @@
     margin-left: 5px;
   }
 
-  .content1,
+  
   .content4 {
     margin: 0;
     padding: 0;
