@@ -12,6 +12,7 @@ const WhoWeAre = () => {
       <div>
         <Navigation /> {/* Use Navigation component instead of Navbar */}
         <main>
+          <div className={styles.WhoWeAre}>
           <div className="container">
             <div className="row">
               <div className="col-md-6 about-image-wrapper">
@@ -33,28 +34,31 @@ const WhoWeAre = () => {
                   </div>
                 </div>
               </div>
-
-              <h2 className={styles.h2}>
-                Who We <span style={{ color: "#009673" }}>Are</span>
-              </h2>
-              <div className={styles.container1}>
-                <div className={styles.content}>
-                  <p>
-                    Our team is dedicated to helping our clients tap into the
-                    vast potential of IoT technology, enabling them to collect
-                    and analyze data from connected devices and make more
-                    informed data-driven decisions. We offer a range of
-                    services, including IoT consulting, system design and
-                    deployment, and ongoing support and maintenance.
-                  </p>
-                  <p>
-                    Our passion for technology and our deep understanding of the
-                    African market allows us to deliver solutions that are
-                    tailored to the unique needs of our clients. Whether you are
-                    a small business looking to streamline your operations or a
-                    large corporation seeking to transform your industry, we
-                    have the expertise and experience to help you succeed.
-                  </p>
+            </div>
+            </div>
+            <div className="container">
+              <div className="row">
+                <h2 className={styles.h2}>
+                  Who We <span style={{ color: "#009673" }}>Are</span>
+                </h2>
+                <div className={styles.container1}>
+                  <div className={styles.content}>
+                    <p>
+                      Our team is dedicated to helping our clients tap into the
+                      vast potential of IoT technology, enabling them to collect
+                      and analyze data from connected devices and make more
+                      informed data-driven decisions. We offer a range of
+                      services, including IoT consulting, system design and
+                      deployment, and ongoing support and maintenance.
+                    
+                      Our passion for technology and our deep understanding of
+                      the African market allows us to deliver solutions that are
+                      tailored to the unique needs of our clients. Whether you
+                      are a small business looking to streamline your operations
+                      or a large corporation seeking to transform your industry,
+                      we have the expertise and experience to help you succeed.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -67,7 +71,7 @@ const WhoWeAre = () => {
                   className={`${styles.image5} img-fluid`}
                 />
                 <div className={styles.content4}>
-                  <h1 className={styles.title}>Why Choose Us</h1>
+                  <h1 className={styles.title}>Why Choose <span style={{ color: "#009673" }}>Us</span></h1>
                   <div className={styles.container2}>
                     <div className={styles.content1}>
                       <div className={styles.cardsContainer}>
@@ -109,7 +113,7 @@ const WhoWeAre = () => {
             </div>
           </div>
 
-          <p className={styles.description}>Some of our Esteemed Clients</p>
+          <p className={styles.description}>Some Of Our <span style={{ color: "#009673" }}>Esteemed Clients</span></p>
           <div className={`container ${styles.customersContainer}`}>
             <div className={styles.wrapper}>
               <div className="row">
@@ -175,7 +179,7 @@ const WhoWeAre = () => {
 
           <div className="container">
             <div className="row">
-              <p className={styles.description}>Some of our partners</p>
+              <h1 className={styles.description}>Some of <span style={{ color: "#009673" }}>Our Partners</span></h1>
               <div className={`container ${styles.customersContainer}`}>
                 <div className={styles.wrapper}>
                   <div className="row">

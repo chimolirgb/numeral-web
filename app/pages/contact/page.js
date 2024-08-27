@@ -13,8 +13,7 @@ const Contact = () => {
         <Navigation />
         <main>
           <div className="container">
-            <h2 className={styles.h2}>contact</h2>
-            <h3 className={styles.h3}>Talk to us.</h3>
+            <h3 className={styles.h3}>Contact <span style={{ color: "#009673" }}>Us</span></h3>
             <div className={styles.contact_form_container}>
               <form className={styles.contact_form}>
                 <div className={styles.form_row}>

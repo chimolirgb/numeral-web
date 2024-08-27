@@ -15,7 +15,7 @@ const Products = ()=>{
         <Navigation />
         <main>
         <div>
-        <h2 className={styles.solutions}>Our Products</h2>
+        <h2 className={styles.solutions}>Our <span style={{ color: "#009673" }}>Products</span></h2>
         <div className={styles.productContainer}>
           <div className={styles.flipCard}>
             <div className={styles.flipCardInner}>

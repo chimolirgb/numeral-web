@@ -285,7 +285,7 @@
 
 .text_img2 {
   margin-top: 130px;
-  background-color: #0084c1;
+  background-color: #59bd86;
   background-size: cover;
   width: 100%;
 }
@@ -318,7 +318,7 @@
 
 .solution h2 {
   margin-top: 0;
-  color: #0077cc;
+  color: #009673;
   font-size: 22px;
   font-weight: 600;
   transition: color 0.3s;
@@ -350,7 +350,7 @@
   font-size: 3rem;
   font-weight: 600;
   text-align: center;
-  color: #198754;
+  color: black;
   margin-top: 150px;
 }
 
@@ -508,7 +508,7 @@
   display: inline-block;
 
   margin-top: 10px;
-  color: #0077cc;
+  color: black;
   font-size: 14px;
   font-weight: 600;
   padding: 10px 20px;
@@ -564,7 +564,7 @@
 }
 
 .readMore:hover {
-  background-color: #0084c1;
+  background: linear-gradient(115deg, #20c997, #198754);
 
   color: white;
 }

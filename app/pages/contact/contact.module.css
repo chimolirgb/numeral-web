@@ -1,14 +1,10 @@
-.h2 {
-  margin-top: 150px;
-  color: #007bff;
-  text-align: center;
-  font-weight: bolder;
-}
+
 
 .h3 {
+  margin-top: 150px;
   text-align: center;
   font-weight: 800px;
-  margin-top: 0px;
+  /* margin-top: 0px; */
   font-weight: bolder;
   font-size: 40px;
 }
@@ -51,7 +47,7 @@
 .submit_button {
   margin: 20px;
   padding: 10px;
-  background-color: #007bff;
+  background-color: #009673;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -61,7 +57,7 @@
 }
 
 .submit_button:hover {
-  background-color: #0056b3;
+  background-color: #009673;
 }
 
 /* Media queries for smaller screens */

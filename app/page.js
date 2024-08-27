@@ -88,7 +88,7 @@ export default function Home() {
         </div>
         <div className="container">
           <div className="row">
-            <h1 className={styles.solutions}>Our Solutions</h1>
+            <h1 className={styles.solutions}>Our <span className={styles.highlight}>Solutions</span></h1>
             <div className={styles.solutionsContainer}>
               <div className={styles.solution}>
                 <h2>Hardware Manufacturing</h2>
@@ -230,7 +230,7 @@ export default function Home() {
         </div>
         <div className="container">
           <div className="row">
-            <h2 className={styles.solutions3}>Why Choose Us</h2>
+            <h2 className={styles.solutions3}>Why Cho<span className={styles.highlight}>ose Us</span></h2>
 
             <div className={styles.solutionsContainer}>
               <div className={styles.solution}>
@@ -296,7 +296,7 @@ export default function Home() {
           <div className="container">
             <div className="row">
               <h2 className={styles.solutions4}>
-                Some of our esteemed Customers
+                Some Of Our <span className={styles.highlight}>Esteemed Customers</span>
               </h2>
 
               <div className={styles.customerContainer}>
@@ -330,7 +330,7 @@ export default function Home() {
         <div className="container">
           <div className="row">
             <div className={styles.contacts}>
-              <h2 className={styles.solutions5}>Contact Us</h2>
+              <h2 className={styles.solutions5}>Contact <span className={styles.highlight}>Us</span></h2>
               <div className={styles.customersContainer}>
                 <div className={styles.card}>
                   <div className={styles.cardBody}>
