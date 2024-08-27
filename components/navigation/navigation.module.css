@@ -585,9 +585,7 @@
   color: #707070;
 }
 
-
-
-@media (max-width:975px){
+@media (max-width: 975px) {
   .ptop {
     font-size: 30px;
     font-weight: 600;
@@ -599,10 +597,9 @@
     margin-left: 0.2px;
     margin-top: 100px;
   }
-  
 }
 
-@media (max-width:916px){
+@media (max-width: 916px) {
   .ptop {
     font-size: 25px;
     font-weight: 600;
@@ -614,15 +611,12 @@
     margin-left: 0.2px;
     margin-top: 30px;
   }
-  
 }
 
 @media (max-width: 890px) {
   .nav {
-
     top: 5%;
   }
-
 
   .nav ul {
     justify-content: start;
@@ -632,7 +626,6 @@
     padding-right: 20%;
     font-size: 0.7rem !important;
     flex-wrap: wrap;
-   
   }
 
   .nav ul.show {
@@ -641,13 +634,10 @@
 }
 
 @media (max-width: 761px) {
-
-
   .nav {
     /* margin-bottom: 20px; */
     top: 5%;
   }
-
 
   .nav ul {
     justify-content: start;
@@ -657,7 +647,6 @@
     padding-right: 13%;
     font-size: 0.7rem !important;
     flex-wrap: wrap;
-   
   }
 
   .nav ul.show {
@@ -681,11 +670,11 @@
 
 /* For smaller screens with hamburger menu */
 @media (max-width: 705px) {
-  .nav{
+  .nav {
     margin-top: 48px;
     justify-content: space-between;
-    flex-direction: column; 
-    align-items: flex-start; 
+    flex-direction: column;
+    align-items: flex-start;
     padding: 0.5rem 1rem; /* Adjust padding */
   }
 
@@ -713,7 +702,6 @@
     height: 25px;
   }
 
-
   .ptop {
     font-size: 20px;
     font-weight: 600;
@@ -725,14 +713,13 @@
     margin-left: 0.2px;
     margin-top: 50px;
   }
- 
 }
 @media (max-width: 704px) {
   .nav {
     justify-content: space-between;
     margin-top: 175px;
-    flex-direction: column; 
-    align-items: flex-start; 
+    flex-direction: column;
+    align-items: flex-start;
     padding: 0.5rem 1rem; /* Adjust padding */
   }
 
@@ -746,7 +733,6 @@
     border-top: 1px solid #ddd;
     z-index: 1;
     left: 15%;
-    
   }
 
   .hamburger {
@@ -766,14 +752,12 @@
 
   .nav ul.show {
     display: flex;
-  } 
-
+  }
 
   .logo img {
     width: 80px;
     height: 25px;
   }
-
 
   .landing {
     flex-direction: column;
@@ -891,29 +875,26 @@
   }
 }
 
-
 @media (max-width: 519px) {
-
   /* Hamburger Menu */
   .hamburger {
-    display: block; 
+    display: block;
     font-size: 0px;
-   
   }
 
   /* Hide Navigation Links Initially */
   .navList {
-    width: 100%; 
-    background-color: #fff; 
-    position: absolute; 
-    top: 22%; 
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: 22%;
     border-top: 1px solid #ddd;
     z-index: 1;
   }
 
   /* Show Navigation Links when Menu is Open */
   .navListOpen {
-    display: flex; 
+    display: flex;
   }
 
   /* Navigation List Items */
@@ -923,13 +904,19 @@
 
   /* Navigation Links */
   .navList a {
-    padding: 0.5rem 0.5rem; 
-    font-size: 10px; 
+    padding: 0.5rem 0.5rem;
+    font-size: 10px;
   }
 
   /* Logo */
   .logo img {
-    width: 60px; 
+    width: 60px;
     height: 20px;
+  }
+}
+
+@media (max-width: 750px) {
+  .nav {
+    top: 0 !important;
   }
 }

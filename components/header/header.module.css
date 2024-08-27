@@ -53,9 +53,7 @@
       font-size: 10px;
       z-index: 1;
       margin-bottom: 0px;
-      padding: 2px 5px; 
-     
-
+      padding: 2px 5px;
     }
 
     .infoItem {
@@ -72,29 +70,25 @@
     padding: 1px 3px;
   }
 
-  .infoItem{
+  .infoItem {
     padding-right: 3px;
     margin-right: 0px;
   }
-
- 
 }
 
-
-  @media (max-width: 704px) {
-    .header {
-      flex-direction: column;
-      padding: 5px 20px; /* Adjust padding for smaller screens */
-      
-    }
-  
-    .infoItem {
-      padding: 5px 0; /* Stack items vertically */
-    }
+@media (max-width: 704px) {
+  .header {
+    flex-direction: column;
+    padding: 5px 20px; /* Adjust padding for smaller screens */
   }
 
+  .infoItem {
+    padding: 5px 0; /* Stack items vertically */
+  }
+}
 
-
-
-
-
+@media (max-width: 750px) {
+  .header {
+    display: none !important;
+  }
+}
