@@ -46,9 +46,9 @@ const Navigation = () => {
               <li>
                 <Link href="/pages/products">Products</Link>
               </li>
-              <li>
+              {/* <li>
                 <Link href="/pages/blog">Blog</Link>
-              </li>
+              </li> */}
               <li>
                 <Link href="/pages/contact" className={styles.contactLink}>
                   Contact
