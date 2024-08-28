@@ -47,6 +47,21 @@
   }
 } */
 
+@media (max-width:1014px){
+  
+    .header {
+      font-size: 11.5px;
+      
+  
+    }
+    .infoItem {
+      padding-right: 10px;
+      margin-right: 4px;
+    }
+  }
+
+
+
 @media (max-width: 970px) {
   .header {
     .header {
