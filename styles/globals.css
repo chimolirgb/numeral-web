@@ -327,7 +327,7 @@ body {
 
 @media (max-width: 704px) {
   .composite-image {
-    margin-top: 480px;
+    margin-top: 5px;
     margin-left: 20px;
   }
 
@@ -359,7 +359,7 @@ body {
 
 @media (max-width: 360px) {
   .composite-image {
-    margin-top: 220px;
+    margin-top: 5px;
     margin-left: 10px;
   }
 
